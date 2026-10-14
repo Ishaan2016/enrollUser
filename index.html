@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enroll to Ishaan's Online Classes</title>
+        <style>
+            button{
+    background-color:yellow;
+    border:none;
+    padding:5px 10px;
+    border-radius:10px;
+}
+body{
+    background-image:url(https://www.oso-web.com/wp-content/uploads/2018/03/homepage-design-connecticut-1.jpeg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+div{
+    background-color:white;
+    width:350px;
+    padding:15px;
+    border-radius:10px;
+    margin:100px auto;
+    text-align:center;
+    color:orange;
+    }
+        </style>
+        </head>
+    <body>
+        <div>
+            <h1>Online Learning Website </h1>
+              <p>Welcome to our online learning platform! Click the <q>Enroll Now</q> button to join the course.</p>
+              <button onclick="enrollUser()">Enroll Now</button>
+        </div>
+        <script>
+            function enrollUser(){
+                let name = prompt("Enter your name to enroll");
+
+                if(name){
+                    alert(`Welcome, ${name} You have sucsessfully in the course`);
+                }
+                else{
+                    alert("Enrollment Cancelled");
+                }
+            }
+            </script>
+        </body>
+</html>
